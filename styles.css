@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.about-me {
+    margin-top: 80px; /* Ajusta según sea necesario */
+}
+
+header {
+    background-color: #008bfd; /* Gris más oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+
+}
+.about-me{
+color: #ffffff;
+}
+
+.skills-chart{
+    color: #ffffff;
+}
+section {
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    background-color: #3a3a3a; /* Gris más oscuro */
+    margin: 20px;
+}
+
+h2 {
+    color: #ffffff; /* Gris claro */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #ffffff; /* Gris más oscuro */
+    color: #ecf0f1; /* Blanco */
+    border-radius: 5px;
+    margin: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #ffffff; /* Gris oscuro */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3498db; /* Azul Francia */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #207bb5; /* Azul más oscuro */
+}
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    color: #ecf0f1; /* Blanco */
+}
+
+.scroll-down span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ecf0f1; /* Blanco */
+    border-radius: 50%;
+    margin: 4px auto;
+}
+
+.contact {
+    background-color: #24394e; /* Gris más oscuro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-links a {
+    color: #ecf0f1; /* Blanco */
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+    display: block;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #222222; /* Gris oscuro */
+    transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #222222; /* Gris más oscuro */
+}
+
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #3498db; /* Azul Francia */
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.float-button:hover {
+    background-color: #207bb5; /* Azul más oscuro */
+}
+
+.skills-chart {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* ... (código anterior) ... */
+
+.portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.portfolio-images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 769px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #3498db; /* Azul Francia */
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        display: flex;
+        justify-content: center; /* Modificado para que los nombres estén más a la izquierda */
+        align-items: center;
+
+    header h1 {
+        margin-left: 20px;
+    }
+}
+}
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #3498db; /* Azul Francia */
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+    header img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #207bb5; /* Azul más oscuro */
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .contact-bar {
+        display: none;
+    }
+
+    .contact-menu {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-bubble {
+        background-color: #3498db; /* Azul Francia */
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-bubble img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .mobile-header {
+        background-color: #3498db; /* Azul Francia */
+        padding: 15px;
+        text-align: center;
+    }
+
+    .mobile-header a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .mobile-header a:hover {
+        color: #207bb5; /* Azul más oscuro */
+    }
+
+    .contact-bar {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .float-button {
+        background-color: #3498db; /* Azul Francia */
+        color: #fff;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 50px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+    }
+
+    .float-button:hover {
+        background-color: #207bb5; /* Azul más oscuro */
+    }
+
+    .contact-menu {
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .contact-bubble {
+        background-color: #3498db; /* Azul Francia */
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-bubble img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+}

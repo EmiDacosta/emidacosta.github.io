@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Mi Página Personal</title>
+</head>
+<body>
+
+    <header class="desktop-header">
+        <h1>Mi Nombre</h1>
+        <img src="tu-foto.jpg" alt="Tu Foto">
+        <nav>
+            <a href="#about-me">Sobre Mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#experience">Experiencia</a>
+            <a href="#portfolio">Portfolio</a>
+            <!-- Agrega más enlaces según sea necesario -->
+        </nav>
+    </header>
+
+    <div class="mobile-header">
+        <div class="contact-bar">
+            <button class="float-button" onclick="toggleContactMenu()">Contacto</button>
+        </div>
+
+        <div class="contact-menu">
+            <div class="contact-bubble" onclick="openLink('https://www.instagram.com/')">
+                <img src="instagram-icon.png" alt="Instagram">
+            </div>
+            <div class="contact-bubble" onclick="openLink('https://twitter.com/')">
+                <img src="twitter-icon.png" alt="Twitter">
+            </div>
+            <div class="contact-bubble" onclick="openLink('tel:+123456789')">
+                <img src="phone-icon.png" alt="Teléfono">
+            </div>
+        </div>
+    </div>
+
+    <section id="about-me" class="about-me">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>¡Hola! Soy [Tu Nombre], un apasionado desarrollador web con experiencia en...</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills-chart">
+                <canvas id="skillsChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <div class="container">
+            <h2>Experiencia</h2>
+            <!-- Agrega aquí información sobre tu experiencia laboral -->
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-images">
+                <!-- Agrega aquí imágenes de tu portafolio -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-bar">
+            <button class="float-button" onclick="toggleContactMenu()">Contacto</button>
+        </div>
+
+        <div class="contact-menu">
+            <div class="contact-bubble" onclick="openLink('https://www.instagram.com/')">
+                <img src="instagram-icon.png" alt="Instagram">
+            </div>
+            <div class="contact-bubble" onclick="openLink('https://twitter.com/')">
+                <img src="twitter-icon.png" alt="Twitter">
+            </div>
+            <div class="contact-bubble" onclick="openLink('tel:+123456789')">
+                <img src="phone-icon.png" alt="Teléfono">
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
