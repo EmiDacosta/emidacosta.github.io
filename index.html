@@ -11,7 +11,7 @@
 <body>
 
     <header class="desktop-header">
-        <h1>Mi Nombre</h1>
+        <h1>Emiliano</h1>
         <img src="tu-foto.jpg" alt="Tu Foto">
         <nav>
             <a href="#about-me">Sobre Mí</a>
@@ -28,14 +28,14 @@
         </div>
 
         <div class="contact-menu">
-            <div class="contact-bubble" onclick="openLink('https://www.instagram.com/')">
-                <img src="instagram-icon.png" alt="Instagram">
+            <div class="contact-bubble" onclick="openLink('https://www.instagram.com/emi.dacosta')">
+                <img src="instagram-icon.png" alt="">
             </div>
-            <div class="contact-bubble" onclick="openLink('https://twitter.com/')">
-                <img src="twitter-icon.png" alt="Twitter">
+            <div class="contact-bubble" onclick="openLink('https://twitter.com/Emidacosta22')">
+                <img src="twitter-icon.png" alt="">
             </div>
-            <div class="contact-bubble" onclick="openLink('tel:+123456789')">
-                <img src="phone-icon.png" alt="Teléfono">
+            <div class="contact-bubble" onclick="openLink('tel:+54 9 3442 577649')">
+                <img src="phone-icon.png" alt="">
             </div>
         </div>
     </div>
@@ -43,31 +43,98 @@
     <section id="about-me" class="about-me">
         <div class="container">
             <h2>Sobre Mí</h2>
-            <p>¡Hola! Soy [Tu Nombre], un apasionado desarrollador web con experiencia en...</p>
+            <p>
+                ¡Hola! Soy Emiliano D'Acosta, un apasionado programador y diseñador gráfico freelance con un enfoque especializado en Python y técnicas de diseño innovadoras.
+                Soy un profesional altamente motivado con habilidades técnicas sólidas y una visión creativa. Mi objetivo principal es fusionar la potencia del desarrollo en Python con las mejores prácticas de diseño gráfico para crear soluciones únicas y atractivas.
+                Como programador, cuento con experiencia extensa en Python, abarcando desde desarrollo web hasta automatización de tareas y análisis de datos. Mi enfoque se centra en escribir código limpio y eficiente para brindar soluciones efectivas.
+                Mi pasión por el diseño gráfico va más allá de lo convencional. Me especializo en técnicas creativas y modernas que agregan un toque distintivo a cada proyecto. Desde la creación de interfaces atractivas hasta la conceptualización de identidades visuales únicas, estoy comprometido a llevar la creatividad al siguiente nivel.
+                Ofrezco servicios freelance para clientes que buscan soluciones personalizadas y de alta calidad. Mi enfoque centrado en el cliente garantiza una colaboración fluida y resultados que superan las expectativas.
+                ¡Hablemos sobre cómo puedo llevar tu proyecto al siguiente nivel!
+                </p>
         </div>
     </section>
 
-    <section class="skills">
-        <div class="container">
-            <h2>Habilidades</h2>
-            <div class="skills-chart">
-                <canvas id="skillsChart"></canvas>
+    <section class="skills-chart">
+        <h2>Habilidades</h2>
+        <div class="skill-bar">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar-progress">
+                <div class="skill-progress" style="width: 70%; background-color: #09314b;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar-progress">
+                <div class="skill-progress" style="width: 65%; background-color: #212d35;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-name">PHOTOSHOP</div>
+            <div class="skill-bar-progress">
+                <div class="skill-progress" style="width: 80%; background-color: #0d4469;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-name">ILLUSTRATOR</div>
+            <div class="skill-bar-progress">
+                <div class="skill-progress" style="width: 90%; background-color: #0e5a8d;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-name">BLENDER</div>
+            <div class="skill-bar-progress">
+                <div class="skill-progress" style="width: 99%; background-color: #0e5a8d;"></div>
             </div>
         </div>
     </section>
 
-    <section class="experience">
-        <div class="container">
-            <h2>Experiencia</h2>
-            <!-- Agrega aquí información sobre tu experiencia laboral -->
+    <section id="experience">
+        <h2>Experiencia Laboral</h2>
+        <div class="experience-item">
+            <div class="experience-info">
+                <h3>Desarrollador Web</h3>
+                <p>Empresa ABC - Ciudad, País</p>
+                <p>Fecha de inicio - Fecha de finalización</p>
+                <p>Descripción del trabajo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="experience-image">
+                <img src="trabajo1.jpg" alt="Proyecto 1">
+            </div>
+        </div>
+    
+        <div class="experience-item">
+            <div class="experience-info">
+                <h3>Diseñador Gráfico</h3>
+                <p>Compañía XYZ - Ciudad, País</p>
+                <p>Fecha de inicio - Fecha de finalización</p>
+                <p>Otra descripción del trabajo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="experience-image">
+                <img src="trabajo2.jpg" alt="Proyecto 2">
+            </div>
         </div>
     </section>
 
-    <section class="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-images">
-                <!-- Agrega aquí imágenes de tu portafolio -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-images">
+            <div class="portfolio-item">
+                <img src="imagen1.jpg" alt="Proyecto 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagen2.jpg" alt="Proyecto 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagen3.jpg" alt="Proyecto 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagen4.jpg" alt="Proyecto 4">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagen5.jpg" alt="Proyecto 5">
+            </div>
+            <div class="portfolio-item">
+                <img src="imagen6.jpg" alt="Proyecto 6">
             </div>
         </div>
     </section>
@@ -78,14 +145,14 @@
         </div>
 
         <div class="contact-menu">
-            <div class="contact-bubble" onclick="openLink('https://www.instagram.com/')">
-                <img src="instagram-icon.png" alt="Instagram">
+            <div class="contact-bubble" onclick="openLink('https://www.instagram.com/emi.dacosta')">
+                <img src="instagram-icon.png" alt="">
             </div>
-            <div class="contact-bubble" onclick="openLink('https://twitter.com/')">
-                <img src="twitter-icon.png" alt="Twitter">
+            <div class="contact-bubble" onclick="openLink('https://twitter.com/Emidacosta22')">
+                <img src="twitter-icon.png" alt="">
             </div>
-            <div class="contact-bubble" onclick="openLink('tel:+123456789')">
-                <img src="phone-icon.png" alt="Teléfono">
+            <div class="contact-bubble" onclick="openLink('tel:+54 9 3442 577649')">
+                <img src="phone-icon.png" alt="">
             </div>
         </div>
     </footer>
