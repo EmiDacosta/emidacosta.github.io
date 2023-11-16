@@ -478,13 +478,6 @@ footer a:hover {
         display: none; /* Ocultar barra de escritorio en pantallas pequeñas */
     }
 
-    .mobile-menu {
-        display: block;
-        text-align: right;
-        padding: 15px;
-        background-color: #3498db; /* Color de fondo para el menú */
-    }
-
     .mobile-nav {
         display: block;
         position: absolute;
