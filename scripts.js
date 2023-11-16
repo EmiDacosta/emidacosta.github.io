@@ -11,29 +11,12 @@ function toggleContact() {
     const contact = document.querySelector('.contact');
     contact.classList.toggle('visible');
 }
-
-// Crear un botón flotante
-const floatButton = document.createElement('button');
-floatButton.className = 'float-button';
-floatButton.innerHTML = 'Contacto';
-floatButton.onclick = toggleContact;
-document.body.appendChild(floatButton);
-
 // Asegurarse de que el botón flotante esté visible solo en dispositivos móviles
 if (window.innerWidth <= 768) {
     floatButton.style.display = 'block';
 } else {
     floatButton.style.display = 'none';
 }
-
-// Ocultar el botón flotante al hacer clic fuera del área de contacto
-document.addEventListener('click', function (event) {
-    const contact = document.querySelector('.contact');
-    if (!contact.contains(event.target) && !floatButton.contains(event.target)) {
-        contact.classList.remove('visible');
-    }
-});
-// ... (código anterior) ...
 
 // Función para cargar y mostrar gráfico de habilidades
 function loadSkillsChart() {
@@ -98,7 +81,7 @@ function toggleContactBubble() {
         contactBubble.style.display = 'block';
     }
 }
-
-// Evento para detectar el desplazamiento y actualizar el estado del globo de contacto
-window.addEventListener('scroll', toggleContactBubble);
-// ... (código anterior) ...
+function toggleMobileMenu() {
+    const mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.style.display = (mobileNav.style.display === 'block') ? 'none' : 'block';
+}

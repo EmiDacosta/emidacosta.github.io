@@ -6,66 +6,87 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <title>Mi Página Personal</title>
+    <title>Portfolio</title>
 </head>
 <body>
 
     <header class="desktop-header">
-        <h1>Emiliano</h1>
-        <img src="tu-foto.jpg" alt="Tu Foto">
+        <h1>Emiliano D´Acosta</h1>
+        <img src="img/tu-foto.jpg" alt="Tu Foto">
         <nav>
             <a href="#about-me">Sobre Mí</a>
-            <a href="#skills">Habilidades</a>
+            <a href="#skills-chart">Habilidades</a>
             <a href="#experience">Experiencia</a>
             <a href="#portfolio">Portfolio</a>
-            <!-- Agrega más enlaces según sea necesario -->
         </nav>
     </header>
 
-    <div class="mobile-header">
-        <div class="contact-bar">
-            <button class="float-button" onclick="toggleContactMenu()">Contacto</button>
+    <div class="mobile-menu">
+        <div class="burger-icon" onclick="toggleMobileMenu()">
+            <!-- Icono de hamburguesa, puedes usar un ícono de hamburguesa SVG o Unicode aquí -->
+            ☰
         </div>
+        <nav class="mobile-nav">
+            <a href="#about-me" onclick="toggleMobileMenu()">Sobre Mí</a>
+            <a href="#skills-chart" onclick="toggleMobileMenu()">Habilidades</a>
+            <a href="#experience" onclick="toggleMobileMenu()">Experiencia</a>
+            <a href="#portfolio" onclick="toggleMobileMenu()">Portfolio</a>
+        </nav>
+    </div>
+
+    <div class="mobile-header">
 
         <div class="contact-menu">
             <div class="contact-bubble" onclick="openLink('https://www.instagram.com/emi.dacosta')">
-                <img src="instagram-icon.png" alt="">
+                <img src="img/instagram-icon.png" alt="">
             </div>
             <div class="contact-bubble" onclick="openLink('https://twitter.com/Emidacosta22')">
-                <img src="twitter-icon.png" alt="">
+                <img src="img/twitter-icon.png" alt="">
             </div>
             <div class="contact-bubble" onclick="openLink('tel:+54 9 3442 577649')">
-                <img src="phone-icon.png" alt="">
+                <img src="img/phone-icon.png" alt="">
             </div>
         </div>
     </div>
 
-    <section id="about-me" class="about-me">
-        <div class="container">
-            <h2>Sobre Mí</h2>
-            <p>
-                ¡Hola! Soy Emiliano D'Acosta, un apasionado programador y diseñador gráfico freelance con un enfoque especializado en Python y técnicas de diseño innovadoras.
-                Soy un profesional altamente motivado con habilidades técnicas sólidas y una visión creativa. Mi objetivo principal es fusionar la potencia del desarrollo en Python con las mejores prácticas de diseño gráfico para crear soluciones únicas y atractivas.
-                Como programador, cuento con experiencia extensa en Python, abarcando desde desarrollo web hasta automatización de tareas y análisis de datos. Mi enfoque se centra en escribir código limpio y eficiente para brindar soluciones efectivas.
-                Mi pasión por el diseño gráfico va más allá de lo convencional. Me especializo en técnicas creativas y modernas que agregan un toque distintivo a cada proyecto. Desde la creación de interfaces atractivas hasta la conceptualización de identidades visuales únicas, estoy comprometido a llevar la creatividad al siguiente nivel.
-                Ofrezco servicios freelance para clientes que buscan soluciones personalizadas y de alta calidad. Mi enfoque centrado en el cliente garantiza una colaboración fluida y resultados que superan las expectativas.
-                ¡Hablemos sobre cómo puedo llevar tu proyecto al siguiente nivel!
+    <section id="about-me">
+        <h2>Sobre Mí</h2>
+        <div class="about-me-content">
+            <div class="bubble">
+                <h2>Experiencia Profesional</h2>
+                <p>En mi rol como Desarrollador Web Senior en Innovate Tech Solutions,</p> 
+                <p>he liderado numerosos proyectos exitosos que han transformado la presencia </p>
+                <p>en línea de nuestros clientes. Mi enfoque en la creación de experiencias </p>
+                <p> web innovadoras y visualmente atractivas ha sido fundamental para el éxito </p>
+                <p> de nuestros proyectos.</p>
                 </p>
+            </div>
+            <div class="bubble">
+                <h3>Habilidades Destacadas</h3>
+                <ul>
+                    <li>Desarrollo Web Front-end</li>
+                    <li>Maquetación con HTML5 y CSS3</li>
+                    <li>Diseño Gráfico con Photoshop e Illustrator</li>
+                    <li>Renderización 3D con Blender</li>
+                    <li>Modelado 3D con SketchUp</li>
+                    <li>Colaboración en Proyectos Creativos</li>
+                </ul>
+            <!-- Agrega más globos según sea necesario -->
         </div>
     </section>
 
-    <section class="skills-chart">
+    <section id="skills-chart">
         <h2>Habilidades</h2>
         <div class="skill-bar">
             <div class="skill-name">HTML</div>
             <div class="skill-bar-progress">
-                <div class="skill-progress" style="width: 70%; background-color: #09314b;"></div>
+                <div class="skill-progress" style="width: 90%; background-color: #0e5a8d;"></div>
             </div>
         </div>
         <div class="skill-bar">
             <div class="skill-name">CSS</div>
             <div class="skill-bar-progress">
-                <div class="skill-progress" style="width: 65%; background-color: #212d35;"></div>
+                <div class="skill-progress" style="width: 70%; background-color: #212d35;"></div>
             </div>
         </div>
         <div class="skill-bar">
@@ -83,7 +104,13 @@
         <div class="skill-bar">
             <div class="skill-name">BLENDER</div>
             <div class="skill-bar-progress">
-                <div class="skill-progress" style="width: 99%; background-color: #0e5a8d;"></div>
+                <div class="skill-progress" style="width: 99%; background-color: #1991e0;"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-name">SKETCHUP</div>
+            <div class="skill-bar-progress">
+                <div class="skill-progress" style="width: 80%; background-color: #0d4469;"></div>
             </div>
         </div>
     </section>
@@ -93,24 +120,30 @@
         <div class="experience-item">
             <div class="experience-info">
                 <h3>Desarrollador Web</h3>
-                <p>Empresa ABC - Ciudad, País</p>
-                <p>Fecha de inicio - Fecha de finalización</p>
-                <p>Descripción del trabajo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Empresa de finanzas - Paris, Francia</p>
+                <p>24/06/2022 - 16/11/2023</p>
+                <p>En este trabajo se dispuso de una pagina web</p>
+                <p>en la cual reflejan las finanzas y desarrolos hechos por</p>
+                <p>una empresa con varios años de experiencia en el rubro</p>
+                </p>
             </div>
             <div class="experience-image">
-                <img src="trabajo1.jpg" alt="Proyecto 1">
+                <img src="img/trabajo1.jpg" alt="Proyecto 1">
             </div>
         </div>
     
         <div class="experience-item">
             <div class="experience-info">
                 <h3>Diseñador Gráfico</h3>
-                <p>Compañía XYZ - Ciudad, País</p>
-                <p>Fecha de inicio - Fecha de finalización</p>
-                <p>Otra descripción del trabajo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Transporte y Logisitica - Caseros, Entre Rios</p>
+                <p>15/01/2022 - 16/11/2023</p>
+                <p>En esta ocasion se trabajo en un transporte de logisitica internacional,<p>
+                <p>creando logos, pagina web, y la posibilidad de<p>
+                <p>la eleccion de app de seguimiento y conocimiento<p>
+                <p>de distintos choferes</p>
             </div>
             <div class="experience-image">
-                <img src="trabajo2.jpg" alt="Proyecto 2">
+                <img src="img/trabajo2.jpg" alt="Proyecto 2">
             </div>
         </div>
     </section>
@@ -119,44 +152,61 @@
         <h2>Portfolio</h2>
         <div class="portfolio-images">
             <div class="portfolio-item">
-                <img src="imagen1.jpg" alt="Proyecto 1">
+                <img src="img/imagen1.png" alt="Proyecto 1">
             </div>
             <div class="portfolio-item">
-                <img src="imagen2.jpg" alt="Proyecto 2">
+                <img src="img/imagen2.jpeg" alt="Proyecto 2">
             </div>
             <div class="portfolio-item">
-                <img src="imagen3.jpg" alt="Proyecto 3">
+                <img src="img/imagen3.jpg" alt="Proyecto 3">
             </div>
             <div class="portfolio-item">
-                <img src="imagen4.jpg" alt="Proyecto 4">
+                <img src="img/imagen4.jpg" alt="Proyecto 4">
             </div>
             <div class="portfolio-item">
-                <img src="imagen5.jpg" alt="Proyecto 5">
+                <img src="img/imagen5.jpg" alt="Proyecto 5">
             </div>
             <div class="portfolio-item">
-                <img src="imagen6.jpg" alt="Proyecto 6">
+                <img src="img/imagen6.jpg" alt="Proyecto 6">
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="contact-bar">
-            <button class="float-button" onclick="toggleContactMenu()">Contacto</button>
-        </div>
-
         <div class="contact-menu">
             <div class="contact-bubble" onclick="openLink('https://www.instagram.com/emi.dacosta')">
-                <img src="instagram-icon.png" alt="">
+                <img src="img/instagram-icon.png" alt="">
             </div>
             <div class="contact-bubble" onclick="openLink('https://twitter.com/Emidacosta22')">
-                <img src="twitter-icon.png" alt="">
+                <img src="img/twitter-icon.png" alt="">
             </div>
             <div class="contact-bubble" onclick="openLink('tel:+54 9 3442 577649')">
-                <img src="phone-icon.png" alt="">
+                <img src="img/phone-icon.png" alt="">
             </div>
         </div>
     </footer>
 
     <script src="scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('nav a');
+    
+            navLinks.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+    
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetSection = document.getElementById(targetId);
+    
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
