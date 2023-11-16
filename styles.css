@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-image: url("img/'tu-imagen-de-fondo.jpg"); /* Ruta de tu imagen de fondo */
+    background-image: url("img/tu-imagen-de-fondo.jpg"); /* Ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Esto fija la imagen de fondo al desplazarse */
@@ -424,6 +424,56 @@ footer a:hover {
     }
 }
 @media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #12496d; /* Azul Francia */
+        padding: 0px;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        display: flex;
+        justify-content: center; /* Modificado para que los nombres estén más a la izquierda */
+        align-items: center;
+
+    header h1 {
+        margin-left: 20px;
+    }
+}
+
+    header img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #207bb5; /* Azul más oscuro */
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .contact-bar {
+        display: none;
+    }
+
     .desktop-header {
         display: none; /* Ocultar barra de escritorio en pantallas pequeñas */
     }
