@@ -436,11 +436,11 @@ footer a:hover {
         display: flex;
         justify-content: center; /* Modificado para que los nombres estén más a la izquierda */
         align-items: center;
+    }
 
     header h1 {
         margin-left: 20px;
     }
-}
 
     header img {
         width: 50px;
